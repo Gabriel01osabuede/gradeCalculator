@@ -41,6 +41,7 @@ namespace gradeCalculator
                             menu.setCurrentStage(3);
                             break;
                         case "3":
+                            Console.WriteLine("Thank you for your time.");
                             Environment.Exit(0);
                             break;
                         default:
@@ -108,30 +109,30 @@ namespace gradeCalculator
                     {
                         if(item.CourseScore >= 70 && item.CourseScore <= 100)
                         {    
-                            calculate = item.NumberOfUnits * 5;
+                            calculate = mygradePointCalculator.unitCalculator(item.NumberOfUnits,5);
                         }
                         else if(item.CourseScore >= 60 && item.CourseScore <=69)
                         {
-                            calculate = item.NumberOfUnits * 4;
+                            calculate =mygradePointCalculator.unitCalculator(item.NumberOfUnits,4);
                         }
                          else if(item.CourseScore  >= 50 && item.CourseScore <= 59)
                         {
                             
-                            calculate = item.NumberOfUnits * 3;
+                            calculate = mygradePointCalculator.unitCalculator(item.NumberOfUnits,3);
                         }
                         else if(item.CourseScore >= 45 && item.CourseScore <= 49)
                         {
-                            calculate = item.NumberOfUnits * 2;
+                            calculate = mygradePointCalculator.unitCalculator(item.NumberOfUnits,2);
                         }
                         else if(item.CourseScore >= 40 && item.CourseScore <= 44)
                         {
                             
-                            calculate = item.NumberOfUnits * 1;
+                            calculate = mygradePointCalculator.unitCalculator(item.NumberOfUnits,1);
                         }
                         else if(item.CourseScore >= 0 && item.CourseScore <=39)
                         {
                            
-                            calculate = item.NumberOfUnits * 0;
+                            calculate = mygradePointCalculator.unitCalculator(item.NumberOfUnits,0);
                         }
                          
                        

@@ -10,5 +10,10 @@ namespace gradeCalculator
            return TotalUnitOfCourse/totalpoints;
           
        }
+
+       public double unitCalculator(int unit,int gradepoint)
+       {
+           return unit * gradepoint;
+       }
    } 
 }
